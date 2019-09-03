@@ -2,6 +2,8 @@ from flask import Flask
 from flask import request
 from flask import make_response
 
+export SLACK_BOT_TOKEN='xoxb-748730405942-735380056275-YOJfE3rHV35oKb3spm3SL0iL'
+
 app = Flask(__name__)
 
 # создали ендпоинт
