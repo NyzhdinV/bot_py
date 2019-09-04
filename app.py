@@ -2,7 +2,15 @@ from flask import Flask
 from flask import request
 from flask import make_response
 
+EVENT_API_FIELD_TYPE = "type"
+EVENT_API_FIELD_TOKEN = "token"
 EVENT_API_FIELD_CHALLENGE = "challenge"
+
+EVENT_API_REQ_TYPE_URL_VERIFICATION = "url_verification"
+EVENT_API_REQ_TYPE_EVENT = "event_callback"
+
+AUTH_API_ARG_CODE = "code"
+AUTH_API_ARG_STATE = "state"
 
 app = Flask(__name__)
 
