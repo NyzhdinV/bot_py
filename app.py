@@ -21,5 +21,4 @@ def hello_slack():
     return response
 
 if __name__ == '__main__':
-    port = int(os.getenv('PORT', 5000))
-    app.run(debug=False, port=port, host='0.0.0.0')
+    app.run('0.0.0.0', 8088, debug=False)
